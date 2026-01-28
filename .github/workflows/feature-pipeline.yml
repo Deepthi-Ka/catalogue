@@ -2,7 +2,7 @@ name: feature-pipeline
 on: [push]
 jobs:
   feature-pipeline:
-      uses: Deepthi-GH/workflows/.github/workflows/feature-nodejs-pipeline.yml@main
+      uses: Deepthi-Ka/workflows/.github/workflows/feature-nodejs-pipeline.yml@main
       with:
         project: roboshop
         component: catalogue
