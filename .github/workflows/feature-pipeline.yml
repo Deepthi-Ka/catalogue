@@ -5,7 +5,7 @@ permissions: # we are writing statuses against commit id. so we have to give pem
   statuses: write
 jobs:
   feature-pipeline:
-      if: github.ref != 'refs/head/main'
+      if: github.ref != 'refs/heads/main'
       uses: Deepthi-Ka/workflows/.github/workflows/feature-nodejs-pipeline.yml@main
       with:
         project: roboshop
@@ -16,7 +16,7 @@ jobs:
 #To pass secrets to a reusable workflow in GitHub Actions, you must explicitly define them in the reusable workflow and then pass them from the caller workflow, either individually or by using the secrets: inherit keyword.
 
   dev-pipeline:
-    if: github.ref = 'refs/head/main'
+    if: github.ref = 'refs/heads/main'
     uses: Deepthi-Ka/workflows/.github/workflows/dev-nodejs-pipeline.yml@main
     with:
         project: roboshop
