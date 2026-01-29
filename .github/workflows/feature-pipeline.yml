@@ -16,7 +16,7 @@ jobs:
 #To pass secrets to a reusable workflow in GitHub Actions, you must explicitly define them in the reusable workflow and then pass them from the caller workflow, either individually or by using the secrets: inherit keyword.
 
   dev-pipeline:
-    if: github.ref = 'refs/heads/main'
+    if: github.ref == 'refs/heads/main'
     uses: Deepthi-Ka/workflows/.github/workflows/dev-nodejs-pipeline.yml@main
     with:
         project: roboshop
