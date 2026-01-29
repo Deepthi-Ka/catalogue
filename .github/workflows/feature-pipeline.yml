@@ -1,5 +1,8 @@
 name: feature-pipelines
 on: [push]
+permissions: # we are writing statuses against commit id. so we have to give pemissions.
+  contents: read
+  statuses: write
 jobs:
   feature-pipeline:
       uses: Deepthi-Ka/workflows/.github/workflows/feature-nodejs-pipeline.yml@main
