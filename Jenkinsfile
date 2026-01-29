@@ -1,4 +1,5 @@
 @Library('jenkins-shared-library') _
+<<<<<<< HEAD
 
 def configMap = [
     project: "roboshop",
