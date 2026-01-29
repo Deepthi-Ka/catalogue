@@ -1,6 +1,6 @@
 name: feature-pipelines
 on: [push]
-permissions: # we are writing statuses against commit id. so we have to give pemissions.
+permissions: # we are writing statuses against commit id. so we have to give pemissions
   contents: read
   statuses: write
 jobs:
