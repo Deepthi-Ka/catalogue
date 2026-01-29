@@ -12,4 +12,4 @@ jobs:
         environment: dev
       secrets: inherit  
 
-#To pass secrets to a reusable workflow in GitHub Actions, you must explicitly define them in the reusable workflow and then pass them from the caller workflow, either individually or by using the secrets: inherit keyword. 
+#To pass secrets to a reusable workflow in GitHub Actions, you must explicitly define them in the reusable workflow and then pass them from the caller workflow, either individually or by using the secrets: inherit keyword 
