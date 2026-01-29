@@ -1,13 +1,16 @@
 @Library('jenkins-shared-library') _
+<<<<<<< HEAD
+
 def configMap = [
-    project : "roboshop",
+    project: "roboshop",
     component: "catalogue"
 ]
 
-// if branch is not equal to main ,then run CI pipeline.
-if ( ! env.BRANCH_NAME.equalsIgnoreCase('main') ){
-    nodeJSEKSPipeline(configMap)
+echo "going to execute jenkins shared library"
+//if branch is not equal to main,then run CI pipeline
+if( ! env.BRANCH_NAME.equalsIgnoreCase('main') ) {
+    nodejsEKSPipeline(configMap)
 }
 else {
-    echo "Please follow the CR process"
+ echo "please follow the CR process"
 }
